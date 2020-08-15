@@ -11,7 +11,6 @@ import Firebase
 struct TeacherData {
     var name: String?
     var subject: String?
-    var status: String? //"online" or "offline"
     var uid: String?
     var ref =  Database.database().reference()
     
@@ -19,8 +18,7 @@ struct TeacherData {
         print(uid)
         ref.child("teachers").child(uid!).setValue([
             "name": name!,
-            "subject": subject!,
-            "status": status!
+            "subject": subject!
         ])
     }
 }

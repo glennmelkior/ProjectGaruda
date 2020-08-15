@@ -42,7 +42,6 @@ class teacherRegistrationVC: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func submit(_ sender: UIButton) {
         teacher.name = name.text!
-        teacher.status = "offline"
         
         let group = DispatchGroup()
         group.enter()
