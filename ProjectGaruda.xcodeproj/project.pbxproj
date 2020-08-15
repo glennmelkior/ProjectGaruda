@@ -12,10 +12,10 @@
 		DB24E54224E7C0D60020F968 /* userData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54124E7C0D60020F968 /* userData.swift */; };
 		DB24E54524E7C1650020F968 /* teacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54424E7C1650020F968 /* teacherData.swift */; };
 		DB24E54924E7C2590020F968 /* studentEnterCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */; };
+		DB24E54D24E7D6110020F968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB24E54C24E7D6110020F968 /* Main.storyboard */; };
 		DB2DE26824E7B7C40090C62A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26724E7B7C40090C62A /* AppDelegate.swift */; };
 		DB2DE26A24E7B7C40090C62A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26924E7B7C40090C62A /* SceneDelegate.swift */; };
 		DB2DE26C24E7B7C40090C62A /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26B24E7B7C40090C62A /* loginVC.swift */; };
-		DB2DE26F24E7B7C40090C62A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2DE26D24E7B7C40090C62A /* Main.storyboard */; };
 		DB2DE27124E7B7C80090C62A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2DE27024E7B7C70090C62A /* Assets.xcassets */; };
 		DB2DE27424E7B7C80090C62A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2DE27224E7B7C80090C62A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -28,11 +28,11 @@
 		DB24E54124E7C0D60020F968 /* userData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userData.swift; sourceTree = "<group>"; };
 		DB24E54424E7C1650020F968 /* teacherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherData.swift; sourceTree = "<group>"; };
 		DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentEnterCategoryVC.swift; sourceTree = "<group>"; };
+		DB24E54C24E7D6110020F968 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DB2DE26424E7B7C40090C62A /* ProjectGaruda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectGaruda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2DE26724E7B7C40090C62A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB2DE26924E7B7C40090C62A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DB2DE26B24E7B7C40090C62A /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
-		DB2DE26E24E7B7C40090C62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB2DE27024E7B7C70090C62A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2DE27324E7B7C80090C62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB2DE27524E7B7C80090C62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		DB2DE27B24E7BA0D0090C62A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DB2DE26D24E7B7C40090C62A /* Main.storyboard */,
+				DB24E54C24E7D6110020F968 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,9 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB2DE27424E7B7C80090C62A /* LaunchScreen.storyboard in Resources */,
+				DB24E54D24E7D6110020F968 /* Main.storyboard in Resources */,
 				DB2DE27124E7B7C80090C62A /* Assets.xcassets in Resources */,
 				DB24E54024E7BF480020F968 /* GoogleService-Info.plist in Resources */,
-				DB2DE26F24E7B7C40090C62A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,14 +255,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB2DE26D24E7B7C40090C62A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB2DE26E24E7B7C40090C62A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB2DE27224E7B7C80090C62A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
