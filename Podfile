@@ -11,6 +11,5 @@ target 'ProjectGaruda' do
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
   pod 'IQKeyboardManagerSwift'
-  
 
 end

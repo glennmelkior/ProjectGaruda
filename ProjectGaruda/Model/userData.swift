@@ -10,7 +10,7 @@ import Foundation
 struct UserData {
     var name: String?
     var subject: String?
-    var specifySubject: String?
+    var topic: String?
     var details: String?
 }
 
