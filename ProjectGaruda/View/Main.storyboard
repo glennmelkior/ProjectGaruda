@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="808.69565217391312" y="-390.40178571428572"/>
         </scene>
-        <!--Student Enter CategoryVC-->
+        <!--Student RegistrationVC-->
         <scene sceneID="Isy-Lk-2cx">
             <objects>
-                <viewController id="2g8-ip-L2Y" customClass="studentEnterCategoryVC" customModule="ProjectGaruda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2g8-ip-L2Y" customClass="studentRegistrationVC" customModule="ProjectGaruda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H5z-XT-lpQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,10 +205,10 @@
             </objects>
             <point key="canvasLocation" x="1593" y="-390"/>
         </scene>
-        <!--View Controller-->
+        <!--Teacher LoginVC-->
         <scene sceneID="u5G-oj-9qa">
             <objects>
-                <viewController id="Ea7-TE-OAJ" sceneMemberID="viewController">
+                <viewController id="Ea7-TE-OAJ" customClass="teacherLoginVC" customModule="ProjectGaruda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ryy-7v-M9Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,23 +231,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" background="rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XPY-RW-Umb">
                                 <rect key="frame" x="88" y="368" width="239" height="38.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TM3-1h-sOs">
                                 <rect key="frame" x="104" y="454" width="206" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Submit" backgroundImage="rectangle.fill" catalog="system">
+                                <state key="normal" title="Login" backgroundImage="rectangle.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="Ea7-TE-OAJ" eventType="touchUpInside" id="ChP-dD-Daq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -255,6 +258,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ugh-CZ-OoI"/>
                     <connections>
+                        <outlet property="email" destination="xuy-SF-ed6" id="kVt-M5-CSy"/>
+                        <outlet property="password" destination="XPY-RW-Umb" id="bjy-5J-BpR"/>
                         <segue destination="yUO-Yz-NSV" kind="show" identifier="loginSuccess" id="2Xd-U3-Ev4"/>
                     </connections>
                 </viewController>
@@ -262,10 +267,10 @@
             </objects>
             <point key="canvasLocation" x="726" y="283"/>
         </scene>
-        <!--Finding TutorVC-->
+        <!--Student FindVC-->
         <scene sceneID="nX1-8f-lrn">
             <objects>
-                <viewController id="yzv-WB-aA7" customClass="findingTutorVC" customModule="ProjectGaruda" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yzv-WB-aA7" customClass="studentFindVC" customModule="ProjectGaruda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gm4-BB-xEc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -504,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQc-R4-ppa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2364" y="546"/>
+            <point key="canvasLocation" x="3122" y="524"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ITK-8e-9Ma">
@@ -528,21 +533,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9Z-ME-Ss9">
-                                <rect key="frame" x="43" y="338" width="94" height="29"/>
+                                <rect key="frame" x="160" y="353" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#num Students online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izG-47-Dee">
-                                <rect key="frame" x="43" y="375" width="177" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#num Students online" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izG-47-Dee">
+                                <rect key="frame" x="121" y="410" width="177" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYD-jj-P4M">
-                                <rect key="frame" x="267" y="339" width="127" height="57"/>
+                                <rect key="frame" x="146" y="656" width="127" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -551,12 +556,12 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZF-9r-ptT">
-                                <rect key="frame" x="128" y="238" width="158" height="43"/>
+                                <rect key="frame" x="35" y="235" width="348" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Welcome">
                                         <attributes>
-                                            <font key="NSFont" size="36" name="HelveticaNeue-Bold"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -574,7 +579,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYw-Nf-OWU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1613" y="546"/>
+            <point key="canvasLocation" x="2364" y="524"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lxB-Iy-YmL">
@@ -650,7 +655,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="heX-m7-JRS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3122" y="546"/>
+            <point key="canvasLocation" x="4352" y="117"/>
         </scene>
         <!--Teacher RegistrationVC-->
         <scene sceneID="c8I-BR-jAH">

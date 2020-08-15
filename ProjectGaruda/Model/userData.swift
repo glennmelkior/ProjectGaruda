@@ -14,18 +14,29 @@ struct UserData {
     var topic: String?
     var details: String?
     var uid : String?
-    var status: String? //"online" or  "notify" or "offline"
+//    var status: String? //"online" or  "notify" or "offline"
     var ref =  Database.database().reference()
     
     func update() {
-        print(uid)
-        ref.child("students").child(uid!).setValue([
+        ref.child("students").child(subject!).child(uid!).setValue([
             "name": name!,
-            "subject": subject!,
             "topic": topic!,
             "details": details!,
-            "status": status
+            "subject": subject!
         ])
+    }
+    
+    func delete(){
+        ref.child("students").child(subject!).child(uid!).removeValue()
+        
+        let user = Auth.auth().currentUser
+        user?.delete(completion: { (error) in
+            if error != nil {
+                print("Cannot delete user")
+            } else {
+                print("User deleted")
+            }
+        })
     }
 }
 

@@ -1,36 +1,21 @@
-//  findingTutorVC.swift
+//  teachMenuVC.swift
 //  ProjectGaruda
 //
-//  Created by Glenn Melkior on 8/15/20.
+//  Created by Glenn Melkior on 8/16/20.
 //  Copyright © 2020 Glenn Melkior. All rights reserved.
 
 
 import UIKit
 
-class findingTutorVC: UIViewController {
+class teacherFindVC: UIViewController {
 
-    var user : UserData?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
     }
     
-    @IBAction func notifyMe(_ sender: UIButton) {
-        user!.status = "notify"
-        user!.update()
-        
-    }
-    
-    @IBAction func cancel(_ sender: UIButton) {
-        user!.status = "offline"
-        user!.update()
-        
-        dismiss(animated: true, completion: nil)
-    }
-    
+
     /*
     // MARK: - Navigation
 

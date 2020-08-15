@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5F6B1BFC4CFE4D505AA494D6 /* Pods_ProjectGaruda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14306C813541F34512CF5717 /* Pods_ProjectGaruda.framework */; };
+		DB0D49BD24E85E3400C5689D /* teacherLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D49BC24E85E3400C5689D /* teacherLoginVC.swift */; };
+		DB0D49BF24E8922600C5689D /* teacherFindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D49BE24E8922600C5689D /* teacherFindVC.swift */; };
 		DB24E54024E7BF480020F968 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB24E53F24E7BF480020F968 /* GoogleService-Info.plist */; };
 		DB24E54224E7C0D60020F968 /* userData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54124E7C0D60020F968 /* userData.swift */; };
 		DB24E54524E7C1650020F968 /* teacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54424E7C1650020F968 /* teacherData.swift */; };
-		DB24E54924E7C2590020F968 /* studentEnterCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */; };
+		DB24E54924E7C2590020F968 /* studentRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54824E7C2590020F968 /* studentRegistrationVC.swift */; };
 		DB24E54D24E7D6110020F968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB24E54C24E7D6110020F968 /* Main.storyboard */; };
 		DB24E55224E7E7990020F968 /* teacherRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E55124E7E7990020F968 /* teacherRegistrationVC.swift */; };
-		DB24E55624E7E95E0020F968 /* findingTutorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E55524E7E95E0020F968 /* findingTutorVC.swift */; };
+		DB24E55624E7E95E0020F968 /* studentFindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E55524E7E95E0020F968 /* studentFindVC.swift */; };
 		DB2DE26824E7B7C40090C62A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26724E7B7C40090C62A /* AppDelegate.swift */; };
 		DB2DE26A24E7B7C40090C62A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26924E7B7C40090C62A /* SceneDelegate.swift */; };
 		DB2DE26C24E7B7C40090C62A /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26B24E7B7C40090C62A /* loginVC.swift */; };
@@ -26,13 +28,15 @@
 		14306C813541F34512CF5717 /* Pods_ProjectGaruda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectGaruda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CD49A9C162D2A9BD4092E7 /* Pods-ProjectGaruda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectGaruda.debug.xcconfig"; path = "Target Support Files/Pods-ProjectGaruda/Pods-ProjectGaruda.debug.xcconfig"; sourceTree = "<group>"; };
 		D9C0F62D907609FF626D5992 /* Pods-ProjectGaruda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectGaruda.release.xcconfig"; path = "Target Support Files/Pods-ProjectGaruda/Pods-ProjectGaruda.release.xcconfig"; sourceTree = "<group>"; };
+		DB0D49BC24E85E3400C5689D /* teacherLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherLoginVC.swift; sourceTree = "<group>"; };
+		DB0D49BE24E8922600C5689D /* teacherFindVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherFindVC.swift; sourceTree = "<group>"; };
 		DB24E53F24E7BF480020F968 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB24E54124E7C0D60020F968 /* userData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userData.swift; sourceTree = "<group>"; };
 		DB24E54424E7C1650020F968 /* teacherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherData.swift; sourceTree = "<group>"; };
-		DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentEnterCategoryVC.swift; sourceTree = "<group>"; };
+		DB24E54824E7C2590020F968 /* studentRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentRegistrationVC.swift; sourceTree = "<group>"; };
 		DB24E54C24E7D6110020F968 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DB24E55124E7E7990020F968 /* teacherRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherRegistrationVC.swift; sourceTree = "<group>"; };
-		DB24E55524E7E95E0020F968 /* findingTutorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findingTutorVC.swift; sourceTree = "<group>"; };
+		DB24E55524E7E95E0020F968 /* studentFindVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentFindVC.swift; sourceTree = "<group>"; };
 		DB2DE26424E7B7C40090C62A /* ProjectGaruda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectGaruda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2DE26724E7B7C40090C62A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB2DE26924E7B7C40090C62A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,18 +87,20 @@
 		DB24E55324E7E92C0020F968 /* Student */ = {
 			isa = PBXGroup;
 			children = (
-				DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */,
-				DB24E55524E7E95E0020F968 /* findingTutorVC.swift */,
+				DB24E54824E7C2590020F968 /* studentRegistrationVC.swift */,
+				DB24E55524E7E95E0020F968 /* studentFindVC.swift */,
 			);
 			path = Student;
 			sourceTree = "<group>";
 		};
-		DB24E55424E7E9420020F968 /* Teacher registration */ = {
+		DB24E55424E7E9420020F968 /* Teacher */ = {
 			isa = PBXGroup;
 			children = (
 				DB24E55124E7E7990020F968 /* teacherRegistrationVC.swift */,
+				DB0D49BC24E85E3400C5689D /* teacherLoginVC.swift */,
+				DB0D49BE24E8922600C5689D /* teacherFindVC.swift */,
 			);
-			path = "Teacher registration";
+			path = Teacher;
 			sourceTree = "<group>";
 		};
 		DB2DE25B24E7B7C40090C62A = {
@@ -144,7 +150,7 @@
 			children = (
 				DB2DE26B24E7B7C40090C62A /* loginVC.swift */,
 				DB24E55324E7E92C0020F968 /* Student */,
-				DB24E55424E7E9420020F968 /* Teacher registration */,
+				DB24E55424E7E9420020F968 /* Teacher */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,12 +271,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0D49BD24E85E3400C5689D /* teacherLoginVC.swift in Sources */,
 				DB24E55224E7E7990020F968 /* teacherRegistrationVC.swift in Sources */,
 				DB24E54224E7C0D60020F968 /* userData.swift in Sources */,
-				DB24E54924E7C2590020F968 /* studentEnterCategoryVC.swift in Sources */,
+				DB0D49BF24E8922600C5689D /* teacherFindVC.swift in Sources */,
+				DB24E54924E7C2590020F968 /* studentRegistrationVC.swift in Sources */,
 				DB24E54524E7C1650020F968 /* teacherData.swift in Sources */,
 				DB2DE26C24E7B7C40090C62A /* loginVC.swift in Sources */,
-				DB24E55624E7E95E0020F968 /* findingTutorVC.swift in Sources */,
+				DB24E55624E7E95E0020F968 /* studentFindVC.swift in Sources */,
 				DB2DE26824E7B7C40090C62A /* AppDelegate.swift in Sources */,
 				DB2DE26A24E7B7C40090C62A /* SceneDelegate.swift in Sources */,
 			);

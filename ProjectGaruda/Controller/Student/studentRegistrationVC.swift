@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class studentEnterCategoryVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class studentRegistrationVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var subject: UIPickerView!
@@ -50,15 +50,7 @@ class studentEnterCategoryVC: UIViewController, UIPickerViewDelegate, UIPickerVi
         user.name = name.text!
         user.topic = topic.text!
         user.details = details.text!
-        user.status = "online"
         
-//        ref.child("students").child(user.uid!).setValue([
-//            "name": user.name!,
-//            "subject": user.subject!,
-//            "topic": user.topic!,
-//            "details": user.details!,
-//            "status": user.status
-//        ])
         user.update()
         
         performSegue(withIdentifier: "findTutor", sender: self)
