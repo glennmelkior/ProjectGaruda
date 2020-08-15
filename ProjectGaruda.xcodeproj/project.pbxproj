@@ -3,23 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F6B1BFC4CFE4D505AA494D6 /* Pods_ProjectGaruda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14306C813541F34512CF5717 /* Pods_ProjectGaruda.framework */; };
+		DB24E54024E7BF480020F968 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB24E53F24E7BF480020F968 /* GoogleService-Info.plist */; };
+		DB24E54224E7C0D60020F968 /* userData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54124E7C0D60020F968 /* userData.swift */; };
+		DB24E54524E7C1650020F968 /* teacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54424E7C1650020F968 /* teacherData.swift */; };
+		DB24E54924E7C2590020F968 /* studentEnterCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */; };
 		DB2DE26824E7B7C40090C62A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26724E7B7C40090C62A /* AppDelegate.swift */; };
 		DB2DE26A24E7B7C40090C62A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26924E7B7C40090C62A /* SceneDelegate.swift */; };
-		DB2DE26C24E7B7C40090C62A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26B24E7B7C40090C62A /* ViewController.swift */; };
+		DB2DE26C24E7B7C40090C62A /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26B24E7B7C40090C62A /* loginVC.swift */; };
 		DB2DE26F24E7B7C40090C62A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2DE26D24E7B7C40090C62A /* Main.storyboard */; };
 		DB2DE27124E7B7C80090C62A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2DE27024E7B7C70090C62A /* Assets.xcassets */; };
 		DB2DE27424E7B7C80090C62A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2DE27224E7B7C80090C62A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14306C813541F34512CF5717 /* Pods_ProjectGaruda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectGaruda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49CD49A9C162D2A9BD4092E7 /* Pods-ProjectGaruda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectGaruda.debug.xcconfig"; path = "Target Support Files/Pods-ProjectGaruda/Pods-ProjectGaruda.debug.xcconfig"; sourceTree = "<group>"; };
+		D9C0F62D907609FF626D5992 /* Pods-ProjectGaruda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectGaruda.release.xcconfig"; path = "Target Support Files/Pods-ProjectGaruda/Pods-ProjectGaruda.release.xcconfig"; sourceTree = "<group>"; };
+		DB24E53F24E7BF480020F968 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB24E54124E7C0D60020F968 /* userData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userData.swift; sourceTree = "<group>"; };
+		DB24E54424E7C1650020F968 /* teacherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherData.swift; sourceTree = "<group>"; };
+		DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentEnterCategoryVC.swift; sourceTree = "<group>"; };
 		DB2DE26424E7B7C40090C62A /* ProjectGaruda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectGaruda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2DE26724E7B7C40090C62A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB2DE26924E7B7C40090C62A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB2DE26B24E7B7C40090C62A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB2DE26B24E7B7C40090C62A /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		DB2DE26E24E7B7C40090C62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB2DE27024E7B7C70090C62A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2DE27324E7B7C80090C62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +43,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6B1BFC4CFE4D505AA494D6 /* Pods_ProjectGaruda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		166C78F01717C12BED440A25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14306C813541F34512CF5717 /* Pods_ProjectGaruda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E20D23D1AA823FBEBB5071C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49CD49A9C162D2A9BD4092E7 /* Pods-ProjectGaruda.debug.xcconfig */,
+				D9C0F62D907609FF626D5992 /* Pods-ProjectGaruda.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB24E54324E7C0DE0020F968 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB24E54124E7C0D60020F968 /* userData.swift */,
+				DB24E54424E7C1650020F968 /* teacherData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DB2DE25B24E7B7C40090C62A = {
 			isa = PBXGroup;
 			children = (
 				DB2DE26624E7B7C40090C62A /* ProjectGaruda */,
 				DB2DE26524E7B7C40090C62A /* Products */,
+				7E20D23D1AA823FBEBB5071C /* Pods */,
+				166C78F01717C12BED440A25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +97,12 @@
 		DB2DE26624E7B7C40090C62A /* ProjectGaruda */ = {
 			isa = PBXGroup;
 			children = (
+				DB24E53F24E7BF480020F968 /* GoogleService-Info.plist */,
 				DB2DE26724E7B7C40090C62A /* AppDelegate.swift */,
 				DB2DE26924E7B7C40090C62A /* SceneDelegate.swift */,
-				DB2DE27C24E7BA1A0090C62A /* Controller */,
+				DB24E54324E7C0DE0020F968 /* Model */,
 				DB2DE27B24E7BA0D0090C62A /* View */,
+				DB2DE27C24E7BA1A0090C62A /* Controller */,
 				DB2DE27024E7B7C70090C62A /* Assets.xcassets */,
 				DB2DE27224E7B7C80090C62A /* LaunchScreen.storyboard */,
 				DB2DE27524E7B7C80090C62A /* Info.plist */,
@@ -78,7 +121,8 @@
 		DB2DE27C24E7BA1A0090C62A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DB2DE26B24E7B7C40090C62A /* ViewController.swift */,
+				DB2DE26B24E7B7C40090C62A /* loginVC.swift */,
+				DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -90,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB2DE27824E7B7C80090C62A /* Build configuration list for PBXNativeTarget "ProjectGaruda" */;
 			buildPhases = (
+				BD5C58B8F83BBAFDA3B9D72C /* [CP] Check Pods Manifest.lock */,
 				DB2DE26024E7B7C40090C62A /* Sources */,
 				DB2DE26124E7B7C40090C62A /* Frameworks */,
 				DB2DE26224E7B7C40090C62A /* Resources */,
+				C542ACA9B8A4707907B5AC71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,18 +189,64 @@
 			files = (
 				DB2DE27424E7B7C80090C62A /* LaunchScreen.storyboard in Resources */,
 				DB2DE27124E7B7C80090C62A /* Assets.xcassets in Resources */,
+				DB24E54024E7BF480020F968 /* GoogleService-Info.plist in Resources */,
 				DB2DE26F24E7B7C40090C62A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BD5C58B8F83BBAFDA3B9D72C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProjectGaruda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C542ACA9B8A4707907B5AC71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectGaruda/Pods-ProjectGaruda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectGaruda/Pods-ProjectGaruda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjectGaruda/Pods-ProjectGaruda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB2DE26024E7B7C40090C62A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB2DE26C24E7B7C40090C62A /* ViewController.swift in Sources */,
+				DB24E54224E7C0D60020F968 /* userData.swift in Sources */,
+				DB24E54924E7C2590020F968 /* studentEnterCategoryVC.swift in Sources */,
+				DB24E54524E7C1650020F968 /* teacherData.swift in Sources */,
+				DB2DE26C24E7B7C40090C62A /* loginVC.swift in Sources */,
 				DB2DE26824E7B7C40090C62A /* AppDelegate.swift in Sources */,
 				DB2DE26A24E7B7C40090C62A /* SceneDelegate.swift in Sources */,
 			);
@@ -298,6 +390,7 @@
 		};
 		DB2DE27924E7B7C80090C62A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49CD49A9C162D2A9BD4092E7 /* Pods-ProjectGaruda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +409,7 @@
 		};
 		DB2DE27A24E7B7C80090C62A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9C0F62D907609FF626D5992 /* Pods-ProjectGaruda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
