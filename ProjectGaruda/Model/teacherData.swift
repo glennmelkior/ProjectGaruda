@@ -11,15 +11,16 @@ import Firebase
 struct TeacherData {
     var name: String?
     var subject: String?
-    var uid: String?
     var status: String? //"online" or "offline"
+    var uid: String?
     var ref =  Database.database().reference()
     
     func update(){
         print(uid)
         ref.child("teachers").child(uid!).setValue([
             "name": name!,
-            "subject": subject!
+            "subject": subject!,
+            "status": status!
         ])
     }
 }
