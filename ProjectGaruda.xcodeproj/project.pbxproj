@@ -13,6 +13,8 @@
 		DB24E54524E7C1650020F968 /* teacherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54424E7C1650020F968 /* teacherData.swift */; };
 		DB24E54924E7C2590020F968 /* studentEnterCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */; };
 		DB24E54D24E7D6110020F968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB24E54C24E7D6110020F968 /* Main.storyboard */; };
+		DB24E55224E7E7990020F968 /* teacherRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E55124E7E7990020F968 /* teacherRegistrationVC.swift */; };
+		DB24E55624E7E95E0020F968 /* findingTutorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24E55524E7E95E0020F968 /* findingTutorVC.swift */; };
 		DB2DE26824E7B7C40090C62A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26724E7B7C40090C62A /* AppDelegate.swift */; };
 		DB2DE26A24E7B7C40090C62A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26924E7B7C40090C62A /* SceneDelegate.swift */; };
 		DB2DE26C24E7B7C40090C62A /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DE26B24E7B7C40090C62A /* loginVC.swift */; };
@@ -29,6 +31,8 @@
 		DB24E54424E7C1650020F968 /* teacherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherData.swift; sourceTree = "<group>"; };
 		DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentEnterCategoryVC.swift; sourceTree = "<group>"; };
 		DB24E54C24E7D6110020F968 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DB24E55124E7E7990020F968 /* teacherRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherRegistrationVC.swift; sourceTree = "<group>"; };
+		DB24E55524E7E95E0020F968 /* findingTutorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findingTutorVC.swift; sourceTree = "<group>"; };
 		DB2DE26424E7B7C40090C62A /* ProjectGaruda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectGaruda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2DE26724E7B7C40090C62A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB2DE26924E7B7C40090C62A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,23 @@
 				DB24E54424E7C1650020F968 /* teacherData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DB24E55324E7E92C0020F968 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */,
+				DB24E55524E7E95E0020F968 /* findingTutorVC.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		DB24E55424E7E9420020F968 /* Teacher registration */ = {
+			isa = PBXGroup;
+			children = (
+				DB24E55124E7E7990020F968 /* teacherRegistrationVC.swift */,
+			);
+			path = "Teacher registration";
 			sourceTree = "<group>";
 		};
 		DB2DE25B24E7B7C40090C62A = {
@@ -122,7 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				DB2DE26B24E7B7C40090C62A /* loginVC.swift */,
-				DB24E54824E7C2590020F968 /* studentEnterCategoryVC.swift */,
+				DB24E55324E7E92C0020F968 /* Student */,
+				DB24E55424E7E9420020F968 /* Teacher registration */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,10 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB24E55224E7E7990020F968 /* teacherRegistrationVC.swift in Sources */,
 				DB24E54224E7C0D60020F968 /* userData.swift in Sources */,
 				DB24E54924E7C2590020F968 /* studentEnterCategoryVC.swift in Sources */,
 				DB24E54524E7C1650020F968 /* teacherData.swift in Sources */,
 				DB2DE26C24E7B7C40090C62A /* loginVC.swift in Sources */,
+				DB24E55624E7E95E0020F968 /* findingTutorVC.swift in Sources */,
 				DB2DE26824E7B7C40090C62A /* AppDelegate.swift in Sources */,
 				DB2DE26A24E7B7C40090C62A /* SceneDelegate.swift in Sources */,
 			);

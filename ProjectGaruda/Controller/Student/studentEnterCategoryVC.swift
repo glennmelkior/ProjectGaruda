@@ -6,7 +6,7 @@
 
 
 import UIKit
-import DropDown
+import Firebase
 
 class studentEnterCategoryVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -16,6 +16,8 @@ class studentEnterCategoryVC: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var details: UITextView!
     
     var user = UserData()
+    var signInSuccess = false
+    var ref: DatabaseReference!
     
     let subjects : [String] = ["English", "Math", "Humanities", "Biology", "Physics", "Chemistry"]
     
@@ -25,6 +27,22 @@ class studentEnterCategoryVC: UIViewController, UIPickerViewDelegate, UIPickerVi
         // Do any additional setup after loading the view.
         subject.delegate = self
         subject.dataSource = self
+        
+        ref = Database.database().reference()
+        
+        Auth.auth().signInAnonymously { (authResult, error) in
+            if error != nil {
+                print("Error signing in")
+            } else {
+                self.signInSuccess = true
+                guard let resultUser = authResult?.user else { return }
+                self.user.uid = resultUser.uid
+            }
+            
+            
+        }
+        
+        user.subject = subjects[0]
     }
     
     
@@ -32,6 +50,18 @@ class studentEnterCategoryVC: UIViewController, UIPickerViewDelegate, UIPickerVi
         user.name = name.text!
         user.topic = topic.text!
         user.details = details.text!
+        user.status = "online"
+        
+//        ref.child("students").child(user.uid!).setValue([
+//            "name": user.name!,
+//            "subject": user.subject!,
+//            "topic": user.topic!,
+//            "details": user.details!,
+//            "status": user.status
+//        ])
+        user.update()
+        
+        performSegue(withIdentifier: "findTutor", sender: self)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -51,15 +81,11 @@ class studentEnterCategoryVC: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "findTutor" {
+            let destinationVC = segue.destination as! findingTutorVC
+            
+            destinationVC.user = user
+        }
     }
-    */
-
 }

@@ -1,5 +1,4 @@
 PODS:
-  - DropDown (2.3.13)
   - Firebase/Auth (6.26.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.5.3)
@@ -8,6 +7,9 @@ PODS:
     - FirebaseAnalytics (= 6.6.0)
   - Firebase/CoreOnly (6.26.0):
     - FirebaseCore (= 6.7.2)
+  - Firebase/Database (6.26.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 6.2.1)
   - Firebase/Storage (6.26.0):
     - Firebase/CoreOnly
     - FirebaseStorage (~> 3.6.1)
@@ -39,6 +41,10 @@ PODS:
     - GoogleUtilities/Logger (~> 6.5)
     - nanopb (~> 1.30905.0)
   - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseDatabase (6.2.1):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - leveldb-library (~> 1.22)
   - FirebaseInstallations (1.3.0):
     - FirebaseCore (~> 6.6)
     - GoogleUtilities/Environment (~> 6.6)
@@ -48,9 +54,6 @@ PODS:
     - FirebaseAuthInterop (~> 1.1)
     - FirebaseCore (~> 6.6)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseUI/Storage (8.4.2):
-    - Firebase/Storage (~> 6.0)
-    - SDWebImage (~> 5.0)
   - GoogleAppMeasurement (6.6.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -81,28 +84,26 @@ PODS:
   - GoogleUtilities/UserDefaults (6.6.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.4.0)
+  - ImagePicker (3.2.0)
   - IQKeyboardManagerSwift (6.5.5)
+  - leveldb-library (1.22)
   - nanopb (1.30905.0):
     - nanopb/decode (= 1.30905.0)
     - nanopb/encode (= 1.30905.0)
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
   - PromisesObjC (1.2.8)
-  - SDWebImage (5.8.4):
-    - SDWebImage/Core (= 5.8.4)
-  - SDWebImage/Core (5.8.4)
 
 DEPENDENCIES:
-  - DropDown
   - Firebase/Auth
   - Firebase/Core
+  - Firebase/Database
   - Firebase/Storage
-  - FirebaseUI/Storage
+  - ImagePicker
   - IQKeyboardManagerSwift
 
 SPEC REPOS:
   trunk:
-    - DropDown
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -110,21 +111,21 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
+    - FirebaseDatabase
     - FirebaseInstallations
     - FirebaseStorage
-    - FirebaseUI
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
     - GTMSessionFetcher
+    - ImagePicker
     - IQKeyboardManagerSwift
+    - leveldb-library
     - nanopb
     - PromisesObjC
-    - SDWebImage
 
 SPEC CHECKSUMS:
-  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   Firebase: 7cf5f9c67f03cb3b606d1d6535286e1080e57eb6
   FirebaseAnalytics: 96634d356482d4f3af8fe459a0ebf19a99c71b75
   FirebaseAuth: 7047aec89c0b17ecd924a550c853f0c27ac6015e
@@ -132,19 +133,20 @@ SPEC CHECKSUMS:
   FirebaseCore: f42e5e5f382cdcf6b617ed737bf6c871a6947b17
   FirebaseCoreDiagnostics: 4a773a47bd83bbd5a9b1ccf1ce7caa8b2d535e67
   FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseDatabase: 4e99c0c475d1ee0aa64ae2b53c93f80b7b60d7d9
   FirebaseInstallations: 6f5f680e65dc374397a483c32d1799ba822a395b
   FirebaseStorage: f4f39ae834a7145963b913f54e2f24a9db1d8fac
-  FirebaseUI: e57e9b9c4340631151fbe67a14206d23d0974f37
   GoogleAppMeasurement: 67458367830514fb20fd9e233496f1eef9d90185
   GoogleDataTransport: 9a8a16f79feffc7f42096743de2a7c4815e84020
   GoogleDataTransportCCTSupport: d70a561f7d236af529fee598835caad5e25f6d3d
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  ImagePicker: 1d950bbb2422548ed58791b4ec7f42fe42920511
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
-  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
 
-PODFILE CHECKSUM: 082815c39cbfbf4648473cd9b3c9702a1a1df728
+PODFILE CHECKSUM: 9cdfb9a32189958f2b7982e73fa80a6e9cd101bd
 
 COCOAPODS: 1.9.3
