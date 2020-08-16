@@ -18,10 +18,6 @@ class studentFindVC: UIViewController {
         
     }
     
-    @IBAction func notifyMe(_ sender: UIButton) {
-        user!.update()
-        
-    }
     
     @IBAction func cancel(_ sender: UIButton) {
         user!.delete()

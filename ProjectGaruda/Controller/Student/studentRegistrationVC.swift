@@ -75,7 +75,7 @@ class studentRegistrationVC: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "findTutor" {
-            let destinationVC = segue.destination as! findingTutorVC
+            let destinationVC = segue.destination as! studentFindVC
             
             destinationVC.user = user
         }

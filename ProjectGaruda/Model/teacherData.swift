@@ -15,24 +15,31 @@ class TeacherData {
     var ref =  Database.database().reference()
     
     func update(){
-        
         ref.child("teachers").child(uid!).setValue([
             "name": name!,
             "subject": subject!
         ])
     }
     
-    func parseInfo(_ uid: String){
-        
-        ref.child("teachers").child(uid).observeSingleEvent(of: .value) { (snapshot) in
+    func parseInfo(_ uid: String, completion: @escaping (TeacherData?) -> Void) {
+        ref.child("teachers").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+            
             let value = snapshot.value as? NSDictionary
             self.name = value?["name"] as? String
             self.subject = value?["subject"] as? String
-            print(self.name)
-            print(self.subject)
-        }
-        
+            self.uid = uid
+            print(value)
+            completion(self)
+        })
     }
     
-    
+    func getNumberOfStudents(_ subject: String, completion: @escaping (UInt?) -> Void){
+        ref.child("students").child(subject).observe(.value) { (snapshot) in
+            
+            
+            completion(snapshot.childrenCount)
+        }
+        
+        
+    }
 }

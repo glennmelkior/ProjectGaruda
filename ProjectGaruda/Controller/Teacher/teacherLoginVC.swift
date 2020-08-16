@@ -15,6 +15,7 @@ class teacherLoginVC: UIViewController {
     
     var ref = Database.database().reference()
     var teacher = TeacherData()
+    var uid: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,18 +24,34 @@ class teacherLoginVC: UIViewController {
     }
     
     @IBAction func login(_ sender: UIButton) {
-
+        
+        let group = DispatchGroup()
+        group.enter()
         
         Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (authResult, error) in
             if error != nil {
                 print("Error signing in")
                 print(error)
             } else {
-                let uid = Auth.auth().currentUser!.uid
-                self.teacher.parseInfo(uid)
-
-                self.performSegue(withIdentifier: "loginSuccess", sender: self)
+                self.uid = Auth.auth().currentUser!.uid
+                group.leave()
             }
+        }
+        
+        group.notify(queue: .main){
+            self.performSegue(withIdentifier: "loginSuccess", sender: self)
+
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "loginSuccess" {
+            let destinationVC = segue.destination as! teacherFindVC
+            
+            destinationVC.uid = self.uid
+//            self.teacher.parseInfo(uid!) { (teacherResult) in
+//                destinationVC.teacher = teacherResult
+//            }
         }
     }
 }

@@ -84,7 +84,7 @@ class teacherRegistrationVC: UIViewController, UIPickerViewDelegate, UIPickerVie
             }
         }
         
-        performSegue(withIdentifier: "registerSuccess", sender: self)
+        performSegue(withIdentifier: "registrationSuccess", sender: self)
     }
     
     //MARK: - picker view
@@ -120,5 +120,11 @@ class teacherRegistrationVC: UIViewController, UIPickerViewDelegate, UIPickerVie
     func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "registrationSuccess" {
+            let destinationVC = segue.destination as! teacherFindVC
+            destinationVC.teacher = teacher
+        }
+    }
 }
