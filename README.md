@@ -1,6 +1,5 @@
 # ProjectGaruda
-
-Please use the "main" branch :)
+"Homework Help, Now."
 
 
 The current climate of society, particularly schools being held online, impedes students from studying efficiently and getting the most out of their education. Students are more likely to experience difficulty trying to understand course materials and not receive sufficient help with homework, as parents most likely have their hands full considering the situation of the world. Our mission was to provide aid to these students through a light mobile app. The name of our app, PE-ER, is a play on the word “peer” and the Indonesian word “PR”, short for “Pekerjaan Rumah”, which translates to homework.
@@ -12,3 +11,6 @@ We prototyped the UI using Figma first and then split tasks between team members
 We had some decisions to make with features, such as what verification is required for students and teachers, and how exactly will students be connected to teachers. Through this process, we realized that we have to account both parties in developing our app, to make sure both would be satisfied with the provided features.
 
 Good things to improve on the app would be to add more screening for tutors, and perhaps allow students to create accounts to save their collaboration sessions.
+
+
+Please use the "main" branch :)
