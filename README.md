@@ -1,5 +1,5 @@
 # ProjectGaruda
-"Homework Help, Now."
+"Homework help, now."
 
 
 The current climate of society, particularly schools being held online, impedes students from studying efficiently and getting the most out of their education. Students are more likely to experience difficulty trying to understand course materials and not receive sufficient help with homework, as parents most likely have their hands full considering the situation of the world. Our mission was to provide aid to these students through a light mobile app. The name of our app, PE-ER, is a play on the word “peer” and the Indonesian word “PR”, short for “Pekerjaan Rumah”, which translates to homework.
