@@ -15,7 +15,9 @@ class studentFindVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            self.performSegue(withIdentifier: "tutorFound", sender: self)
+        }
     }
     
     

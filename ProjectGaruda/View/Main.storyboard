@@ -380,6 +380,9 @@
                                 <state key="normal" title="Connect" backgroundImage="rectangle.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="KrE-o9-EIW" kind="show" id="A6G-eW-bxL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -551,7 +554,7 @@
             <objects>
                 <viewController id="KrE-o9-EIW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vtY-bA-GKV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQb-nQ-dHe">
@@ -617,6 +620,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="bqx-N9-vsk"/>
                     </view>
+                    <navigationItem key="navigationItem" id="syp-0P-U7Q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="heX-m7-JRS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
